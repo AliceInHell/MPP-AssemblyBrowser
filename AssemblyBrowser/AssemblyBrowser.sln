@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssemblyBrowserLibrary", "AssemblyBrowserLibrary\AssemblyBrowserLibrary.csproj", "{724D9D0F-2F79-42D2-98A7-1DB1FC444535}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssembyBrowserUnitTest", "AssembyBrowserUnitTest\AssembyBrowserUnitTest.csproj", "{EBDD407A-3C1F-4172-BDF4-ED9A34A047AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssemblyBrowserView", "AssemblyBrowserView\AssemblyBrowserView.csproj", "{6FA820D8-AFCF-4C39-A26E-8C1BA84BCAE0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{724D9D0F-2F79-42D2-98A7-1DB1FC444535}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{724D9D0F-2F79-42D2-98A7-1DB1FC444535}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{724D9D0F-2F79-42D2-98A7-1DB1FC444535}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBDD407A-3C1F-4172-BDF4-ED9A34A047AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBDD407A-3C1F-4172-BDF4-ED9A34A047AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBDD407A-3C1F-4172-BDF4-ED9A34A047AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBDD407A-3C1F-4172-BDF4-ED9A34A047AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FA820D8-AFCF-4C39-A26E-8C1BA84BCAE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FA820D8-AFCF-4C39-A26E-8C1BA84BCAE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FA820D8-AFCF-4C39-A26E-8C1BA84BCAE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FA820D8-AFCF-4C39-A26E-8C1BA84BCAE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace AssembyBrowserUnitTest
 {
     [TestClass]
-    public class UnitTest1
+    public class AssemblyBrowserTestClass
     {
         [TestMethod]
         public void TestMethod1()

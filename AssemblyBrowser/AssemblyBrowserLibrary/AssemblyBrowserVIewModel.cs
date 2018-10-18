@@ -5,7 +5,7 @@ using System.Text;
 
 namespace AssemblyBrowserLibrary
 {
-    class AssemblyBrowserVIewModel
+    public class AssemblyBrowserVIewModel
     {
     }
 }
