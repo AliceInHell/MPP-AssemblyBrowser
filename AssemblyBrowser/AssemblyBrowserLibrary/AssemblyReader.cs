@@ -8,11 +8,11 @@ using System.Linq;
 
 namespace AssemblyBrowserLibrary
 {
-    public class AsseblyReader
+    public class AssemblyReader
     {
         private AssemblyBrowserResult _result;
 
-        public AsseblyReader()
+        public AssemblyReader()
         {
             
         }
