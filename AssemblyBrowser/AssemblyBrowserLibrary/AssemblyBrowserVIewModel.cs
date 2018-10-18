@@ -11,6 +11,7 @@ namespace AssemblyBrowserLibrary
         private AssemblyBrowserResult _result;
         private AssemblyReader _asmReader;
         private RelayCommand _openCommand;
+        private string _resultString;
 
         public AssemblyBrowserVIewModel()
         {
@@ -22,9 +23,19 @@ namespace AssemblyBrowserLibrary
             get { return _result; }
             set
             {
-                if(_result != value)
+                _result = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public string OutputString
+        {
+            get { return _resultString; }
+            set
+            {
+                if (_resultString != value)
                 {
-                    _result = value;
+                    _resultString = value;
                     OnPropertyChanged();
                 }
             }
@@ -59,6 +70,35 @@ namespace AssemblyBrowserLibrary
                            }
                     }));
             }
+        }
+
+        private void NamespacesToString()
+        {
+            string res = "";
+            foreach (var ns in _result.namespaces)
+            {
+                res += $"{ns.name}:\n";
+                foreach (var dataType in ns.dataTypes)
+                {
+                    res += $"  {dataType.name}:\n";
+                    foreach (var field in dataType.fields)
+                    {
+                        res += $"    Field: {field.type} {field.name}\n";
+                    }
+
+                    foreach (var property in dataType.properties)
+                    {
+                        res += $"    Property: {property.type} {property.name}\n";
+                    }
+
+                    foreach (var method in dataType.methods)
+                    {
+                        res += $"    Method: {method.signature}\n";
+                    }
+                }
+            }
+
+            OutputString = res;
         }
     }
 }

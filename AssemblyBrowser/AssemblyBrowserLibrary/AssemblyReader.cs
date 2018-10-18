@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using AssemblyBrowserLibrary.ResultStructure;
 using System.Reflection;
-using System.Linq;
 
 namespace AssemblyBrowserLibrary
 {
