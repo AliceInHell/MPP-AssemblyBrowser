@@ -24,6 +24,7 @@ namespace AssemblyBrowserLibrary
             set
             {
                 _result = value;
+                NamespacesToString();
                 OnPropertyChanged();
             }
         }

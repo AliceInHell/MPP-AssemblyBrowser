@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Reflection;
 
 namespace AssemblyBrowserLibrary.ResultStructure
 {
@@ -12,9 +13,9 @@ namespace AssemblyBrowserLibrary.ResultStructure
         public List<Property> properties;
         public List<Method> methods;
 
-        public Datatype(Type t)
+        public Datatype(TypeInfo t)
         {
-            name = t.Name;
+            name = AtributeBuilder.GetAtributes(t) + t.Name;
             fields = new List<Field>();
             properties = new List<Property>();
             methods = new List<Method>();

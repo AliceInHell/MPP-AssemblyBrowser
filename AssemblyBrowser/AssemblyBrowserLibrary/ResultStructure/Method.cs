@@ -13,31 +13,7 @@ namespace AssemblyBrowserLibrary.ResultStructure
 
         public Method(MethodInfo mi)
         {
-            if (mi.GetGenericArguments().Length != 0)
-                name = GetGenericName(mi);
-            else
-                name = mi.Name;
-            signature = "" + mi.ReturnType.Name + " (";
-
-            ParameterInfo[] pi = mi.GetParameters();
-            foreach(ParameterInfo param in pi)
-            {
-                signature = signature + " " + param.ParameterType.Name + " " + param.Name;
-            }
-
-            signature = signature + ")";
-        }
-
-        private string GetGenericName(MethodInfo mi)
-        {
-            string result = "" + mi.Name + " <";
-
-            foreach(Type t in mi.GetGenericArguments())
-            {
-                result = result + t.Name;
-            }
-
-            return result + ">";
+            signature = AtributeBuilder.GetTypeModifiers(mi.GetType()) + mi.ToString();
         }
     }
 }

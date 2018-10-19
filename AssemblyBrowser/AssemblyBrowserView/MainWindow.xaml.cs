@@ -22,6 +22,7 @@ namespace AssemblyBrowserView
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new AssemblyBrowserLibrary.AssemblyBrowserVIewModel();
         }
     }
 }
