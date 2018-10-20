@@ -31,7 +31,7 @@ namespace AssemblyBrowserLibrary.ResultStructure
                 if (t.GetType().IsGenericType)
                     result += "<" + GetGenericType(genericType.GetType().GenericTypeArguments) + ">";
                 else
-                    result += genericType.Name;
+                    result += genericType.Name + " ";
             }
 
             return result;

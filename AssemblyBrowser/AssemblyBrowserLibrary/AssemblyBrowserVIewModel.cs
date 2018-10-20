@@ -76,12 +76,12 @@ namespace AssemblyBrowserLibrary
         private void NamespacesToString()
         {
             string res = "";
-            foreach (var ns in _result.namespaces)
+            foreach (var ns in _result.Namespaces)
             {
-                res += $"{ns.name}:\n";
-                foreach (var dataType in ns.dataTypes)
+                res += $"{ns.Name}:\n";
+                foreach (var dataType in ns.DataTypes)
                 {
-                    res += $"  {dataType.name}:\n";
+                    res += $"  {dataType.Name}:\n";
                     foreach (var field in dataType.fields)
                     {
                         res += $"    Field: {field.type} {field.name}\n";

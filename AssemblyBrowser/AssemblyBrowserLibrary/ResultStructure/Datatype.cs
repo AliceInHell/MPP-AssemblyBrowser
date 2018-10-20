@@ -8,14 +8,15 @@ namespace AssemblyBrowserLibrary.ResultStructure
 {
     public class Datatype
     {
-        public string name;
+        public string Name { set; get; }
+        public string DataTypeInfo { set; get; }
         public List<Field> fields;
         public List<Property> properties;
         public List<Method> methods;
 
         public Datatype(TypeInfo t)
         {
-            name = AtributeBuilder.GetAtributes(t) + t.Name;
+            Name = AtributeBuilder.GetAtributes(t) + t.Name;
             fields = new List<Field>();
             properties = new List<Property>();
             methods = new List<Method>();
@@ -23,6 +24,8 @@ namespace AssemblyBrowserLibrary.ResultStructure
             GetFields(t);
             GetProperties(t);
             GetMethods(t);
+
+            CollectTypeInfo();
         }
 
         private void GetFields(Type t)
@@ -56,6 +59,26 @@ namespace AssemblyBrowserLibrary.ResultStructure
                     this.methods.Add(new Method(method));
                 }
             }
+        }
+
+        private void CollectTypeInfo()
+        {
+            DataTypeInfo = "\tFields:\n\t\t";
+
+            foreach (Field f in fields)
+                DataTypeInfo += f.type + " " + f.name + "\n\t\t";
+
+            DataTypeInfo += "\n\tProperties\n\t\t";
+
+            foreach (Property p in properties)
+                DataTypeInfo += p.type + " " + p.name + "\n\t\t";
+
+            DataTypeInfo += "\n\tMethods\n\t\t";
+
+            foreach (Method m in methods)
+                DataTypeInfo += m.signature + m.name + "\n\t\t";
+
+            this.DataTypeInfo = DataTypeInfo;
         }
     }
 }

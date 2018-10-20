@@ -7,14 +7,14 @@ namespace AssemblyBrowserLibrary.ResultStructure
 {
     public class Namespace
     {
-        public string name;
+        public string Name { set; get; }
 
-        public List<Datatype> dataTypes;
+        public List<Datatype> DataTypes { set; get; }
 
         public Namespace(string name)
         {
-            this.name = name;
-            dataTypes = new List<Datatype>();
+            this.Name = name;
+            DataTypes = new List<Datatype>();
         }
     }
 }

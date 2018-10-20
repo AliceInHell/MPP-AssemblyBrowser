@@ -7,11 +7,11 @@ namespace AssemblyBrowserLibrary.ResultStructure
 {
     public class AssemblyBrowserResult
     {
-        public List<Namespace> namespaces;
+        public List<Namespace> Namespaces { set; get; }
 
         public AssemblyBrowserResult()
         {
-            namespaces = new List<Namespace>();
+            Namespaces = new List<Namespace>();
         }
     }
 }

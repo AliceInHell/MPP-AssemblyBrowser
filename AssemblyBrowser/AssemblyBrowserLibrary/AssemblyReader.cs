@@ -25,19 +25,19 @@ namespace AssemblyBrowserLibrary
             //working with namespaces
             foreach (var type in asm.DefinedTypes)
             {
-                if (_result.namespaces.Find(x => x.name == type.Namespace) == null 
+                if (_result.Namespaces.Find(x => x.Name == type.Namespace) == null 
                     && type.Namespace != null)
                 {
-                    _result.namespaces.Add(new Namespace(type.Namespace));
+                    _result.Namespaces.Add(new Namespace(type.Namespace));
                 }
             }
 
             //working with dataTypes
-            foreach (var ns in _result.namespaces)
+            foreach (var ns in _result.Namespaces)
             {
-                foreach (var type in asm.DefinedTypes.Where(x => x.Namespace == ns.name))
+                foreach (var type in asm.DefinedTypes.Where(x => x.Namespace == ns.Name))
                 {
-                    ns.dataTypes.Add(new Datatype(type));
+                    ns.DataTypes.Add(new Datatype(type));
                 }
             }
 
