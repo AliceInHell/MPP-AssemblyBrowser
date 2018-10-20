@@ -4,3 +4,6 @@ E:\Study\Labs\5 semester\MPP\lab3\AssemblyBrowser\AssembyBrowserUnitTest\bin\Deb
 E:\Study\Labs\5 semester\MPP\lab3\AssemblyBrowser\AssembyBrowserUnitTest\obj\Debug\AssembyBrowserUnitTest.csprojResolveAssemblyReference.cache
 E:\Study\Labs\5 semester\MPP\lab3\AssemblyBrowser\AssembyBrowserUnitTest\obj\Debug\AssembyBrowserUnitTest.dll
 E:\Study\Labs\5 semester\MPP\lab3\AssemblyBrowser\AssembyBrowserUnitTest\obj\Debug\AssembyBrowserUnitTest.pdb
+E:\Study\Labs\5 semester\MPP\lab3\AssemblyBrowser\AssembyBrowserUnitTest\bin\Debug\AssemblyBrowserLibrary.dll
+E:\Study\Labs\5 semester\MPP\lab3\AssemblyBrowser\AssembyBrowserUnitTest\bin\Debug\AssemblyBrowserLibrary.pdb
+E:\Study\Labs\5 semester\MPP\lab3\AssemblyBrowser\AssembyBrowserUnitTest\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
